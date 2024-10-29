@@ -14,3 +14,5 @@ print(people)
 people.discard("Bill")
 print(people)
 print(len(people))
+
+#loops and functions
