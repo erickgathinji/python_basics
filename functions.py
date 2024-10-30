@@ -2,7 +2,7 @@
 # define area of a triangle - blue thing is the name
 import math
 from datetime import date
-from site import USER_BASE
+
 
 
 def calc_area_triangle(b, h):
@@ -25,7 +25,7 @@ def add(*args): #(arguments) - this function adds numbers dynamically
         total += num
         print("Total is ",total)
 
-def sayHi(name, age=21): #the 21 is default, but user can input age
+def sayhi(name, age=21): #the 21 is default, but user can input age
     print("Hello ", name, "I am ", age, " years old")
 
 
