@@ -71,7 +71,7 @@
 #     weight_lb = float (weight) / 0.45
 #     print('You are ', weight_lb, 'pounds')
 
-#loops - while + condition
+# loops - while + condition
 i = 1
 # while i <= 5:
 #     print(i)
@@ -83,5 +83,16 @@ i = 1
 #     i = i + 1 # i += 1 since i will always be 1. This will end the loop
 # print("Done")
 
-# Guessing Game
+# Guessing Game (loops)
 # Scenario: There is a secret guess of 9, and have only 3 chances to guess the correct number.
+# secret_number = 9
+# guess_count = 0
+# guess_limit = 3  # not <=
+# while guess_count < guess_limit:
+#     guess = int(input('Guess: '))
+#     guess_count += 1
+#     if guess == secret_number:
+#         print('Congrats! You guessed the secret number!')
+#         break
+# else:
+#     print('Sorry, you guessed the wrong number!')
