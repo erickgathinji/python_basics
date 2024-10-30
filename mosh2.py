@@ -33,10 +33,55 @@
 # if has_high_income or has_good_credit:
 #     print("Eligible for loan")
 
-#Not inverts any boolean value given to it eg True to False
-#scenario:If applicant has good credit and does not have a criminal record: Eligible for loan
+# Not inverts any boolean value given to it eg True to False
+# scenario:If applicant has good credit and does not have a criminal record: Eligible for loan
 # has_good_credit = True
 # has_criminal_record = False
 # if has_good_credit and not has_criminal_record:
 #     print("Eligible for loan")
 
+# Comparison operators;
+# scenario: if temperature > 30 = it's a hot day
+#             otherwise if < 30 = it's a cold day
+#             otherwise it's neither hot nor cold
+# temperature = 35
+# if temperature > 30: #>,<,>=,=< are boolean.. same to != (not equal to) and == (not =, which is an assignment)
+#     print("It's a hot day")
+# else:
+#     print("It's not a hot day")
+
+# Exercise
+# name = input("Enter your name: ")
+# if len(name) < 3:
+#     print("name must be at least 3 characters")
+# elif len(name) > 50:
+#     print("name can be a maximum of 50 characters")
+# else:
+#     print("name looks good")
+
+# Project: Weight Converter
+# weight = input("Weight: ")
+# unit = input("(L)bs or (K)g: ")
+# if unit == 'L':
+#     weight_kg = float(weight) * 0.45
+#     print('You are', weight_kg, 'kilos')
+#
+# else:
+#     # converted = float(weight) * 2.20
+#     weight_lb = float (weight) / 0.45
+#     print('You are ', weight_lb, 'pounds')
+
+#loops - while + condition
+i = 1
+# while i <= 5:
+#     print(i)
+#     i = i + 1 # i += 1 since i will always be 1. This will end the loop
+# print("Done")
+# i = 1
+# while i <= 5:
+#     print('*' * i)
+#     i = i + 1 # i += 1 since i will always be 1. This will end the loop
+# print("Done")
+
+# Guessing Game
+# Scenario: There is a secret guess of 9, and have only 3 chances to guess the correct number.
