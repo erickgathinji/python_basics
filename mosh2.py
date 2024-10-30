@@ -14,4 +14,29 @@
 #     print(" It's a lovely day")
 # print("Enjoy your day")
 
-#start 04:45 do exercise
+# #start 04:45 do exercise
+# price = 1000000
+# is_good_credit = True
+# if is_good_credit:
+#     down_payment = price * 0.1
+#     print(down_payment) #or use the formatted one for print instead of including price in each:
+# else:
+#     down_payment = price * 0.2
+#     print(down_payment) #or use the formatted one for print instead of including price in each:
+# #or use the formatted one for print instead of including price in each:
+# print(f"Down payment is ${down_payment}")
+
+# Logical Operators -and / or / NOT
+# scenario: if applicant has high income AND good credit - Eligible for loan
+# has_high_income = False
+# has_good_credit = True
+# if has_high_income or has_good_credit:
+#     print("Eligible for loan")
+
+#Not inverts any boolean value given to it eg True to False
+#scenario:If applicant has good credit and does not have a criminal record: Eligible for loan
+# has_good_credit = True
+# has_criminal_record = False
+# if has_good_credit and not has_criminal_record:
+#     print("Eligible for loan")
+
