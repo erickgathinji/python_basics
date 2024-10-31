@@ -9,5 +9,5 @@ class Criminal:
     def show_details(self):
         print(f"Name : {self.name} \nID: {self.id_number}\nIssue: {self.crime}\nGender: {self.gender}")
 
-c1 = Criminal ("Johnte Mkuu", "298629629", "Murder", "M")
+c1 = Criminal ("John Smith", "298629629", "Murder", "M")
 c1.show_details()
