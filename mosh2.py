@@ -13,6 +13,7 @@
 # else: #executed if both is_hot and is_cold are false
 #     print(" It's a lovely day")
 # print("Enjoy your day")
+# from turtledemo.penrose import start
 
 # #start 04:45 do exercise
 # price = 1000000
@@ -71,7 +72,7 @@
 #     weight_lb = float (weight) / 0.45
 #     print('You are ', weight_lb, 'pounds')
 
-# loops - while + condition
+# WHILE loops - while + condition
 i = 1
 # while i <= 5:
 #     print(i)
@@ -96,3 +97,32 @@ i = 1
 #         break
 # else:
 #     print('Sorry, you guessed the wrong number!')
+
+# Car Game (project)
+# command = ""
+# started = False
+# while True:
+#     command = input('> ').lower()
+#     if command == "start":
+#         if started:
+#             print("Car is already started")
+#         else:
+#             started = True
+#             print('Car started...')
+#     elif command == "stop":
+#         if not started:
+#             print("Car is already stopped")
+#         else:
+#             started = False
+#             print('Car stopped.')
+#     elif command == "help":
+#         print('''
+# start - starts the car
+# stop - stops the car
+# quit - quit the game
+#         ''')
+#     elif command == "quit":
+#         break
+#     else:
+#         print("I can't understand that")
+#
