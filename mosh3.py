@@ -20,10 +20,64 @@ print(total) #make sure to indent well outside
 for x in range(4): # other values (1,2,3) will be executed after y. Each value executes the y values
     for y in range (3):
         print(f'({x}, {y})')
-"""
+
 # Challenge
 
 numbers = [5, 2, 5, 2, 2]
 
+# for x_count in numbers:
+#     print('x' * x_count) #1 way - shortcut
 for x_count in numbers:
-# start 1:53:00
+    output = ''
+    for count in range(x_count):
+        output += 'x'
+    print(output)
+
+#lists
+names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary' ]
+# print(names[2:4]) #Mosh & Sarah - retrieve values
+# replace or modify values
+names[0] = 'Jon' #note this changes the list value [0]
+print(names)
+
+Find the largest number in list
+numbers = [9, 8, 7, 4, 50, 90,43,34,56,97]
+# print(max(numbers)) - 1 way
+maxi = numbers [0] #2nd way
+for number in numbers:
+    if number > maxi:
+        maxi = number
+print(maxi)
+
+# 2D Lists
+matrix = [
+    [1, 2, 3], #row
+    [4, 5, 6],
+    [7, 8, 9]
+]
+#retrieve 2 from the list:
+print(matrix [0][1])
+#change value of 2 in the list:
+matrix [0][1] = 20
+print(matrix)
+
+matrix = [
+    [1, 2, 3], #row
+    [4, 5, 6],
+    [7, 8, 9]
+]
+# use inner loops to iterate:
+for row in matrix:
+    for item in row:
+        print(item)
+"""
+#List Methods/functions
+numbers = [5, 2, 1, 7, 4]
+#add values to dataset
+numbers.append(20)
+print (numbers)
+#insert values
+numbers.insert(2,11) #index is the number to the right of new number
+print(numbers)
+
+

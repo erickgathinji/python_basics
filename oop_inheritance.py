@@ -16,7 +16,7 @@ class Employee:
     def print_details(self):
         print(f"Name: {self.name}\nID: {self.id_number}\nDOB: {self.dob}\nGender: {self.gender}\nAge: {self.age}")
 
-class PermanentEmployee(Employee): #The employee in bracket is the inheritance
+class PermanentEmployee(Employee): #The employee is inherited
     def __init__(self, name, id_number, dob, gender, salary):
         super().__init__(name, id_number, dob, gender) #replaces typing the 4 self
         self.salary = salary
@@ -24,7 +24,7 @@ class PermanentEmployee(Employee): #The employee in bracket is the inheritance
     def print_salary(self):
         print(f"Salary is {self.salary}")
 
-    def print_details(self): #override - because we added the salary part
+    def print_details(self): #override - added the salary part
         super().print_details()
         print(f"Salary is {self.salary}")
 
