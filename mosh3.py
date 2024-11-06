@@ -70,7 +70,7 @@ matrix = [
 for row in matrix:
     for item in row:
         print(item)
-"""
+
 #List Methods/functions
 numbers = [5, 2, 1, 7, 4]
 #add values to dataset
@@ -79,5 +79,38 @@ print (numbers)
 #insert values
 numbers.insert(2,11) #index is the number to the right of new number
 print(numbers)
+#remove values
+numbers.remove(2) #specify actual value, not index
+print(numbers)
+#remove all values
+# numbers.clear()
+# print(numbers)
+#remove the last item in a list:
+numbers.pop()
+print(numbers)
+#check if a value exists/check index:
+print(numbers.index(11))
+print(11 in numbers)
 
+#count occurrences of an item
+no = [3, 4, 5, 3, 2, 6,3,8,3]
+print(no.count(3))
+#sort your list
+no.sort()
+no.reverse() #after sort to arrange from largest
+print(no)
+
+# copy your list - not dynamic- its like a backup of original
+no = [3, 4, 5, 3, 2, 6,3,8,3]
+no2 = no.copy()
+print(no2)
+
+# write a program to remove the duplicates in a list
+no = [3, 4, 5, 3, 2, 6,3,5,3]
+new = []
+for i in no:
+    if i not in new:
+        new.append(i)
+print(new)
+"""
 
