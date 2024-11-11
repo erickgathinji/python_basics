@@ -90,7 +90,18 @@ def greet_user (first_name, last_name):
     print('Welcome aboard')
 
 greet_user("John", "Smith") # just separate using  comma
-greet_user("Mary", "Smith")
+greet_user("Mary", "Smith") #if you don't include 2nd argument, an error
+
+
+# KEYWORD ARGUMENTS -- the above example is a positional argument
+def greet_user (first_name, last_name):
+    print(f'Hi {first_name} {last_name} !')
+    print('Welcome aboard')
+greet_user(last_name="Smith", first_name="John")
+
+# calc_cost (50, 5, 0.1) example in such a scenario, use keyword arguments to improve readability of the code
+# calc_cost (total=50, shipping=5, discount=0.1)
+#when using both positional + keyword arguments, let the positional always come first
 """
 
 
