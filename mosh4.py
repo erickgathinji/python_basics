@@ -64,16 +64,43 @@ output = "" #means string
 for word in words:
     output += emojis.get(word, word) + " "
 print(output)
-"""
+
 
 #FUNCTIONS
 # To create a greeting-- Hi There! Welcome aboard
-def greet_user ():
+def greet_user (): #def = define
     print('Hi there!')
     print('Welcome aboard')
 
-# print("Start")
-greet_user()  #note this does not need print to appear on the terminal
-# print("Finish")
+print("Start") #just a test of calling
+greet_user()  # called the function - note this does not need print to appear on the terminal
+print("Finish")
+
+# PARAMETERS - The placeholders defined - example name in the definition
+#***Note that ARGUMENTS are the actual pieces of info supplied example John
+def greet_user (name): #def = define
+    print(f'Hi {name} !')
+    print('Welcome aboard')
+
+greet_user("John") #defined the name inside the bracket
+# greet_user() #if name not included, an error
+
+def greet_user (first_name, last_name):
+    print(f'Hi {first_name} {last_name} !')
+    print('Welcome aboard')
+
+greet_user("John", "Smith") # just separate using  comma
+greet_user("Mary", "Smith")
+"""
+
+
+
+
+
+
+
+
+
+
 
 
