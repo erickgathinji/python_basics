@@ -56,12 +56,15 @@ import emoji
 #Emoji Converter - save the characters in a dictionary
 message = input('>')
 words = message.split (' ') #splits the input and separates it using the ' '
-emojis = { #define emojis using a dictionary
-    ':)' : ''
+emojis = { #define emojis using a dictionary --- win; --- # print(emoji.emojize('😊'))
+    ":)": "😄", #dont forget comma, and double quote
+    ":(": "😞"
 }
-print(words) #outputs a list with each item as a string
-# start 2:28:00
-print(emoji.emojize('😊'))
+output = "" #means string
+for word in words:
+    emojis.get(word, word)
+
+
 
 
 
