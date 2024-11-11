@@ -102,10 +102,30 @@ greet_user(last_name="Smith", first_name="John")
 # calc_cost (50, 5, 0.1) example in such a scenario, use keyword arguments to improve readability of the code
 # calc_cost (total=50, shipping=5, discount=0.1)
 #when using both positional + keyword arguments, let the positional always come first
+
+
+# RETURN STATEMENTS
+def square(number):
+    return number * number
+
+result = square(9) #assign the call to a variable or print it directly, otherwise won't work
+print(result)
+print(square(9))
 """
 
+# CREATING A REUSABLE FUNCTION
+message = input('>')
+words = message.split (' ') #splits the input and separates it using the ' '
+emojis = { #define emojis using a dictionary --- win; --- # print(emoji.emojize('😊'))
+    "smile": "😄", #dont forget comma, and double quote
+    "sad": "😞" #use sad / smile in terminal
+}
+output = "" #means string
+for word in words:
+    output += emojis.get(word, word) + " "
+print(output)
 
-
+# start 2:49:00
 
 
 
