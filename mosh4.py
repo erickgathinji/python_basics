@@ -50,23 +50,30 @@ output = ''
 for char in phone:
     output += digits_mapping.get(char,'!') + ' ' #The ' ' ensures space between the output
 print(output)
-"""
+
 import emoji
 
 #Emoji Converter - save the characters in a dictionary
 message = input('>')
 words = message.split (' ') #splits the input and separates it using the ' '
 emojis = { #define emojis using a dictionary --- win; --- # print(emoji.emojize('😊'))
-    ":)": "😄", #dont forget comma, and double quote
-    ":(": "😞"
+    "smile": "😄", #dont forget comma, and double quote
+    "sad": "😞" #use sad / smile in terminal
 }
 output = "" #means string
 for word in words:
-    emojis.get(word, word)
+    output += emojis.get(word, word) + " "
+print(output)
+"""
 
+#FUNCTIONS
+# To create a greeting-- Hi There! Welcome aboard
+def greet_user ():
+    print('Hi there!')
+    print('Welcome aboard')
 
-
-
-
+# print("Start")
+greet_user()  #note this does not need print to appear on the terminal
+# print("Finish")
 
 
